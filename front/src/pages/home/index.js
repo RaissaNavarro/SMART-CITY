@@ -9,14 +9,16 @@ const Home = () => {
     <header className="cabecalho">
       <div className="titlenav">
         <div className="sensores">
-          <p>Temperatura</p>
-          <p>Umidade</p>
-          <p>Luminosidade</p>
-          <p>Contador</p>
+        <p onClick={() => navigate("/temperatura")}>temperatura</p>
+          <p onClick={() => navigate("/umidade")}>umidade</p>
+          <p onClick={() => navigate("/luminosidade")}>luminosidade</p>
+          <p onClick={() => navigate("/contador")}>contador</p>
         </div>
         <div className="sing-in">
           <p onClick={() => navigate("/login")}>Login</p>
           <p onClick={() => navigate("/cadastrar")}>Cadastrar-se</p>
+
+          
         </div>
       </div>
       <hr className="separator" />
